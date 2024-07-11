@@ -15,7 +15,7 @@
     product_data: {
     type: Object,
     default(){
-        return{};
+      return{};
     }
  } 
 

@@ -15,7 +15,7 @@
                 </span>
         </div>
         <div>
-            <button>Удалить</button>
+            <button @click="deleteFromCart(index)">Удалить</button>
         </div>
          
     </div>
@@ -43,8 +43,8 @@
   },
   computed:{},
   methods:{
-    deleteFromCart() {
-        this.$emit("deleteFromCart");
+    deleteFromCart(index) {
+        this.$emit('deleteFromCart', index);
     },
   },
   watch:{},
